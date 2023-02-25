@@ -1,0 +1,74 @@
+[
+{
+  "model": "guestbook.record",
+  "pk": 1,
+  "fields": {
+    "name": "John Doe",
+    "email": "johndoe@email.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas sed tempus urna et pharetra. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Tortor condimentum lacinia quis vel eros donec. Quam pellentesque nec nam aliquam sem et tortor consequat id. Pellentesque sit amet porttitor eget dolor. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Mauris ultrices eros in cursus turpis massa tincidunt dui. Lectus quam id leo in vitae. Mus mauris vitae ultricies leo integer malesuada nunc vel. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam sollicitudin tempor id eu nisl. Morbi blandit cursus risus at ultrices mi.",
+    "created_at": "2023-02-25T06:28:18.992Z",
+    "updated_at": "2023-02-25T06:28:18.992Z",
+    "status": "ACTIVE"
+  }
+},
+{
+  "model": "guestbook.record",
+  "pk": 2,
+  "fields": {
+    "name": "Jane Doe",
+    "email": "janedoe@gmail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem sed risus. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Gravida neque convallis a cras semper auctor neque. Sed libero enim sed faucibus turpis in. Aliquam etiam erat velit scelerisque in. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Amet aliquam id diam maecenas ultricies. Sagittis id consectetur purus ut faucibus pulvinar elementum. Vel quam elementum pulvinar etiam non quam. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Magna etiam tempor orci eu lobortis elementum nibh tellus. Dignissim enim sit amet venenatis urna cursus eget. Pellentesque habitant morbi tristique senectus et.",
+    "created_at": "2023-02-25T06:29:50.683Z",
+    "updated_at": "2023-02-25T06:29:50.683Z",
+    "status": "ACTIVE"
+  }
+},
+{
+  "model": "guestbook.record",
+  "pk": 3,
+  "fields": {
+    "name": "Blocked",
+    "email": "blocked@email.com",
+    "text": "Blocked text",
+    "created_at": "2023-02-25T07:02:30.603Z",
+    "updated_at": "2023-02-25T07:02:30.603Z",
+    "status": "BLOCKED"
+  }
+},
+{
+  "model": "guestbook.record",
+  "pk": 4,
+  "fields": {
+    "name": "John Smith",
+    "email": "johnsmith@mail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui nunc mattis enim ut tellus elementum sagittis vitae et. Eu sem integer vitae justo eget. Nibh mauris cursus mattis molestie. Et tortor at risus viverra adipiscing. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Proin sagittis nisl rhoncus mattis rhoncus. Laoreet sit amet cursus sit amet dictum. In egestas erat imperdiet sed euismod nisi porta lorem. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Eu nisl nunc mi ipsum faucibus vitae aliquet.",
+    "created_at": "2023-02-25T07:09:46.266Z",
+    "updated_at": "2023-02-25T07:09:46.266Z",
+    "status": "ACTIVE"
+  }
+},
+{
+  "model": "guestbook.record",
+  "pk": 6,
+  "fields": {
+    "name": "Jack Long",
+    "email": "jacklong@email.com",
+    "text": "Lorem ipsum dolor sit amet",
+    "created_at": "2023-02-25T08:54:26.004Z",
+    "updated_at": "2023-02-25T08:56:21.311Z",
+    "status": "ACTIVE"
+  }
+},
+{
+  "model": "guestbook.record",
+  "pk": 7,
+  "fields": {
+    "name": "Newman Rikkaurd",
+    "email": "nrikkaurd@email.fr",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Consequat semper viverra nam libero. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Erat velit scelerisque in dictum non consectetur a erat nam. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. A diam maecenas sed enim ut sem viverra aliquet eget. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Etiam tempor orci eu lobortis elementum nibh tellus molestie. Iaculis urna id volutpat lacus laoreet. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Elit ut aliquam purus sit amet luctus venenatis. Risus nullam eget felis eget nunc lobortis. Consequat id porta nibh venenatis cras sed felis. Lorem sed risus ultricies tristique nulla aliquet enim tortor. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Tincidunt tortor aliquam nulla facilisi cras.",
+    "created_at": "2023-02-25T09:04:45.881Z",
+    "updated_at": "2023-02-25T09:05:08.953Z",
+    "status": "BLOCKED"
+  }
+}
+]

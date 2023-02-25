@@ -7,16 +7,15 @@ from guestbook.models import Record
 class RecordForm(forms.Form):
     STATUS_CHOICES = (
         ('ACTIVE', 'Active'),
-        ('BLOCKED', 'Blocked'),
     )
     name = forms.CharField(max_length=100, required=True, label='Name')
     email = forms.EmailField(max_length=100, required=True, label='Email')
     text = forms.CharField(max_length=3000, required=True, label='Text', widget=widgets.Textarea)
-    status = forms.ChoiceField(choices=STATUS_CHOICES, required=True, label='Status')
+    status = forms.ChoiceField(choices=STATUS_CHOICES, required=True, label='Status', initial='ACTIVE', widget=forms.widgets.HiddenInput())
 
     class Meta:
         model = Record
-        fields = ['name', 'email', 'text', 'created_at', 'updated_at', 'status']
+        fields = ['name', 'email', 'text', 'created_at', 'updated_at']
 
     def clean_name(self):
         name = self.cleaned_data.get('name')
