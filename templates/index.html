@@ -3,6 +3,13 @@
 {% block title %}
     Home
 {% endblock %}
+{% block menu %}
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="{% url 'record_add' %}" style="color: white">Add Record</a>
+        </li>
+    </ul>
+{% endblock %}
 {% block content %}
     {% for record in records %}
         <div class="card" style="margin-top: 2rem">
