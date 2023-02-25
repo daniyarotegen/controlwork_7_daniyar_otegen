@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load bootstrap5 %}
 {% block title %}
-    Home
+    Guestbook
 {% endblock %}
 {% block menu %}
     <ul class="navbar-nav">
@@ -13,10 +13,25 @@
 {% block content %}
     {% for record in records %}
         <div class="card" style="margin-top: 2rem">
+
             <div class="card-body">
-                <h5 class="card-title">{{ record.name }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{ record.email }}</h6>
-                <p class="card-text">{{ record.text }}</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-left">
+                            <h5 class="card-title">{{ record.name }}</h5>
+                        </div>
+                        <div class="col text-end">
+                            <a href="{% url 'record_update' record.pk %}" title="Edit Record"><i class="bi bi-pencil-square"></i></a>
+                            <a href="{% url 'record_delete' record.pk %}" title="Delete Record"><i class="bi bi-x-square"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h6 class="card-subtitle mb-2 text-muted">{{ record.email }}</h6>
+                    <p class="card-text">{{ record.text }}</p>
+                </div>
+
             </div>
         </div>
     {% endfor %}

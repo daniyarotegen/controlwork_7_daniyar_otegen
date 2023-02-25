@@ -1,6 +1,5 @@
 from django.core.handlers.wsgi import WSGIRequest
-from django.shortcuts import render, redirect
-
+from django.shortcuts import render, redirect, get_object_or_404
 from guestbook.forms import RecordForm
 from guestbook.models import Record, StatusChoice
 
@@ -23,5 +22,37 @@ def add_view(request: WSGIRequest):
             'form': form
         })
     else:
-        record = Record.objects.create(**form.cleaned_data)
+        Record.objects.create(**form.cleaned_data)
         return redirect('index')
+
+
+def update_view(request, pk):
+    record = get_object_or_404(Record, pk=pk)
+    if request.method == 'POST':
+        form = RecordForm(request.POST)
+        if form.is_valid():
+            record.name = form.clean_name()
+            record.email = form.cleaned_data['email']
+            record.text = form.clean_text()
+            record.status = form.cleaned_data['status']
+            record.save()
+            return redirect('index')
+    else:
+        form = RecordForm(initial={
+            'name': record.name,
+            'email': record.email,
+            'text': record.text,
+            'status': record.status
+        })
+    return render(request, 'record_update.html', {'form': form, 'record': record})
+
+
+def delete_view(request, pk):
+    record = get_object_or_404(Record, pk=pk)
+    if request.method == 'POST':
+        record.delete()
+        return redirect('index')
+    context = {
+        'record': record,
+    }
+    return render(request, 'record_delete.html', context)
