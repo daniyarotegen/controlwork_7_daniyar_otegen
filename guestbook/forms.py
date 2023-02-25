@@ -28,3 +28,7 @@ class RecordForm(forms.Form):
         if len(text) < 2:
             raise ValidationError('Text must be longer than 2 symbols')
         return text
+
+
+class RecordSearchForm(forms.Form):
+    name = forms.CharField(max_length=100, required=False, label='Search by name')

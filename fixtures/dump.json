@@ -70,5 +70,29 @@
     "updated_at": "2023-02-25T09:05:08.953Z",
     "status": "BLOCKED"
   }
+},
+{
+  "model": "guestbook.record",
+  "pk": 8,
+  "fields": {
+    "name": "Peter Long",
+    "email": "peterlong@email.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed blandit libero volutpat sed cras ornare arcu dui. Elementum integer enim neque volutpat ac tincidunt. Enim ut tellus elementum sagittis vitae et leo. Nulla posuere sollicitudin aliquam ultrices sagittis. Rhoncus dolor purus non enim praesent. Vitae auctor eu augue ut lectus arcu bibendum. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Tortor aliquam nulla facilisi cras fermentum. Ut consequat semper viverra nam libero. Aenean sed adipiscing diam donec adipiscing tristique risus nec. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Augue neque gravida in fermentum et sollicitudin ac orci phasellus.",
+    "created_at": "2023-02-25T09:26:34.507Z",
+    "updated_at": "2023-02-25T09:26:34.507Z",
+    "status": "ACTIVE"
+  }
+},
+{
+  "model": "guestbook.record",
+  "pk": 9,
+  "fields": {
+    "name": "Scott Lang",
+    "email": "scottlang@email.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna id volutpat. Scelerisque purus semper eget duis at tellus at. Consequat semper viverra nam libero justo laoreet sit. Ornare aenean euismod elementum nisi quis eleifend quam. Orci sagittis eu volutpat odio facilisis mauris sit amet massa. Est sit amet facilisis magna etiam tempor. Erat imperdiet sed euismod nisi porta lorem. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Phasellus faucibus scelerisque eleifend donec pretium. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Vel orci porta non pulvinar neque laoreet. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Nulla malesuada pellentesque elit eget. Tortor posuere ac ut consequat semper viverra nam. Etiam dignissim diam quis enim lobortis scelerisque. Id aliquet risus feugiat in ante metus dictum. Sodales ut eu sem integer vitae justo eget magna.",
+    "created_at": "2023-02-25T09:28:45.347Z",
+    "updated_at": "2023-02-25T09:28:55.892Z",
+    "status": "ACTIVE"
+  }
 }
 ]

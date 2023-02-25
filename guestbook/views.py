@@ -1,13 +1,19 @@
 from django.core.handlers.wsgi import WSGIRequest
 from django.shortcuts import render, redirect, get_object_or_404
-from guestbook.forms import RecordForm
+from guestbook.forms import RecordForm, RecordSearchForm
 from guestbook.models import Record, StatusChoice
 
 
 def index_view(request: WSGIRequest):
-    records = Record.objects.exclude(status=StatusChoice.BLOCKED).order_by('-created_at')
+    form = RecordSearchForm(request.GET)
+    if form.is_valid():
+        name = form.cleaned_data.get('name')
+        records = Record.objects.filter(name__icontains=name).exclude(status=StatusChoice.BLOCKED).order_by('-created_at')
+    else:
+        records = Record.objects.exclude(status=StatusChoice.BLOCKED).order_by('-created_at')
     context = {
-        'records': records
+        'records': records,
+        'form': form
     }
     return render(request, 'index.html', context=context)
 
