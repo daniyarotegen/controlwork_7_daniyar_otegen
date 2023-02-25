@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+    {% for record in records %}
+        <div class="card" style="margin-top: 2rem">
+            <div class="card-body">
+                <h5 class="card-title">{{ record.name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ record.email }}</h6>
+                <p class="card-text">{{ record.text }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
